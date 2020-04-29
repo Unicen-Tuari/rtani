@@ -15,18 +15,19 @@
         <img class="logo "src="images/logo.png" alt="foto del logo">
         <h1> Mis Recetas</h1>
         <nav>
-            <a class="actual" href="index.html">Inicio</a>
+            <a  href="index.html">Inicio</a>
             <a href="saltyRecipes.html"> Recetas Saladas</a>
             <a href="SweetRecipes.html">Recetas Dulces</a>
+            <a href="subscription.html">Suscribirme</a>
         </nav>
     </div>
-
+   
     <p class="nombrepag"> Si el mundo de la cocina te fascina, en Mis recetas descubrirás  recetas riquísimas  saladas y 
         dulces que deleitarán incluso a los paladares más exigentes. En nuestra web encontrarás todo tipo de recetas de
         cocina capaces de sorprender a los paladares
         más exquisitos.Ademas cada receta contiene su tabla nutricional!
     </p>
-         
+    <hr>    
     <h2 class ="subtitulo">Algunas de las recetas que encontraras en esta web </h2>
  
     <div class="clase">
@@ -58,16 +59,10 @@
         <h3 class="nombrereceta">Torta de ricota</h3>
         <img  class="images"src="images/torta.jpg" alt="foto de Torta">
     </div>
-    
-    <div class="formulario">
-        <h4 class="suscripciones"> Completa tus datos y recibiras un email cuando subamos recetas nuevas </h4>
-        <form>
-            <label for="nombreyapellido">Nombre y Apellido</label>
-            <input class="nombre" type="text" placeholder="Escribe tu nombre y Apellido" name="nombreyapellido" id="nombreyapellido"></input>
-            <label for="email">Email</label>
-            <input  class= "email"type="email" placeholder="Ingrese su email " name="email" id="email">
-            <input type="submit" value="Enviar">
-        </form>
-    </div>
+    <div class="java">
+    <h4>¿No sabes cual receta elegir?</h4> 
+    <div id="random-name"></div>
+   <button class="btn-primary" id="generate">Te ayudamos</button>
+ </div>
 </body> 
 </html>

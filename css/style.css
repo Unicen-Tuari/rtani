@@ -1,0 +1,221 @@
+
+.encabezado{
+    width:100%;
+    background: #C96474;
+     margin-bottom:3%;
+     float: left;   
+}
+.logo{
+  margin-top: 2%;
+  width: 5%;
+margin-left: 2%;
+  float: left;
+  margin-right: 0;
+  border-radius: 30px;
+
+}
+ 
+h1{
+  margin-bottom: 4%;
+    float: left;
+    margin-left:1%;
+   font-family: cursive;
+font-size: 150%;
+   color: cornsilk;
+   margin-top: 3%;
+  
+  
+    }
+ nav{
+        float: left;
+        width: 80%;
+        padding: 3%  0%;
+        text-align: right;
+       }  
+    a{
+        font-family: cursive;
+        color:cornsilk;
+     font-size: 130%;
+     padding: 2%;
+     text-decoration: none;
+    }
+    a:hover{
+        background:#F8A6AC ;
+        text-decoration: none;
+    }
+  
+    .nombrepag{
+        clear: both;
+        background:beige;
+        font-family: cursive;
+        font-size:130% ;
+      text-align: center;
+      border-radius: 10px;
+     
+    }
+   
+   .subtitulo{
+    font-family: cursive;
+ margin: 0 auto;
+ text-align: center;
+    font-size:156.25% ;
+    color: #C96474;
+    background: beige;  
+    border-radius: 10px;
+     width: 60%;
+    left:60% ;
+   } 
+   .nombrereceta{
+    font-family: cursive;
+   text-align: center;
+     color: #C96474 ;
+    font-size: 125%;
+
+ }
+ .clase{
+    width: 25%;
+    background:beige;
+    border:#F8A6AC 5px solid;
+   border-radius: 10px;
+    margin-left: 6%;
+   margin-top: 2%;
+    float: left;   
+    margin-bottom: 2%;
+   }
+   .images{
+    
+    width: 90%;
+  margin-left: 5%;
+    margin-right: 5%;
+    object-fit: cover;
+}
+.java{
+  clear: both;
+  clear: both;
+  font-family: cursive;
+  text-align: center;
+     font-size:156.25% ;
+     color:#C96474;
+     background:beige ;  
+     border-radius: 10px;
+      width: 60%;
+     left:60% ;
+     margin-left: 20%;
+}
+.btn-primary{
+background: #C96474;
+color: beige;
+font-family: cursive;
+font-size: 100% ;
+}
+.tipo{
+  clear: both;
+  font-family: cursive;
+  text-align: center;
+     font-size:156.25% ;
+     color:beige;
+     background:#C96474 ;  
+     border-radius: 10px;
+      width: 60%;
+     left:60% ;
+     margin-left: 20%;
+}
+
+
+.receta{
+
+border-radius: 40px;
+margin-left: 10%;
+margin-right: 10%;
+background: beige;
+padding: 1%;
+margin-bottom: 3%;
+         }
+  
+.recetanombre{
+ font-family: cursive;
+  text-align: center;
+  font-size: 130%;
+ color:  #C96474;
+          
+   }
+.imagen{
+  margin-top: 3%;
+  width: 38%;
+  margin-left: 15%;
+  float: left;
+  margin-bottom: 4%;
+  }
+  .ingrediente{
+    margin-top: 2%;
+    margin-left: 2%;
+    float: left;
+  
+}
+ul{
+  font-size: 125%;
+  font-family: cursive;
+  }
+.pasos{
+  clear: both;
+  font-size:156.25%  ;
+  color: #C96474;
+  text-align: center;
+  font-family: cursive;
+}
+ol{
+  font-size:106.25% ;
+  font-family: cursive;  
+  margin-left: 5%;
+  margin-right: 5%; 
+}
+h5{
+  font-size: 156.25% ;  
+ color: #C96474;
+  font-family: cursive;
+  text-align: center;
+  margin-top: 5%;
+}
+table{
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+td{
+ 
+  border: 3px solid #F8A6AC;
+   font-size:106.25% ;
+  text-align: center;
+  font-family: cursive;
+}
+
+th{
+border-collapse: collapse;  
+border: 3px solid #F8A6AC;  
+font-family: cursive;
+color: #C96474; 
+}
+.titulosub{
+  font-family: cursive;
+  color: #F8A6AC;
+}
+.Suscripcion{
+  clear: both;
+  border: 3px solid #F8A6AC; 
+  width: 70%;
+  left:70% ;
+  text-align: center;
+  margin: 0 auto;
+  background: beige;
+  
+}
+form{
+  font-family: cursive;
+  color: #F8A6AC;
+  
+}
+.boton{
+  background:  #F8A6AC;
+  font-family: cursive;
+  color: beige;
+
+}

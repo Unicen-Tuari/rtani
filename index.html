@@ -60,9 +60,14 @@
         <img  class="images"src="images/torta.jpg" alt="foto de Torta">
     </div>
     <div class="java">
-    <h4>¿No sabes cual receta elegir?</h4> 
-    <div id="random-name"></div>
-   <button class="btn-primary" id="generate">Te ayudamos</button>
+        <p class="nombrereceta">¿No sabes que receta elegir?elige el tipo que mas te guste y nosotros te ayudaremos</p>
+        <form name="Formulario_random" enctype="text"> 
+        <p> Receta Salada  <input id="receta_salada" type="radio" name="Check1"> </p> 
+        <p> Receta Dulce <input id="receta_salada" type="radio" name="Check1" > </p>   
+        <p>La receta salada que elegimos para vos es:<span id = "mostrar_salado">  </span> </p>
+        <p>La receta dulce que elegimos para vos es:<span id = "mostrar_dulce">  </span> </p>
+            </form> 
  </div>
+ <script src="java/main.js"></script>
 </body> 
 </html>

@@ -84,30 +84,37 @@ font-size: 150%;
    }
    .images{
     
-    width: 90%;
+  width: 90%;
   margin-left: 5%;
-    margin-right: 5%;
-    object-fit: cover;
+  margin-right: 5%;
+  object-fit: cover;
 }
-.java{
+.javascript{
   clear: both;
-  clear: both;
+  background:#C96474 ;  
+  border-radius: 10px;
+  margin-left: 10%; 
+  margin-right: 10%;
+}
+.pregunta{
   font-family: cursive;
   text-align: center;
-     font-size:156.25% ;
-     color:#C96474;
-     background:beige ;  
-     border-radius: 10px;
-      width: 60%;
-     left:60% ;
-     margin-left: 20%;
+  font-size:135% ;
+  color:beige;
 }
-.btn-primary{
-background: #C96474;
-color: beige;
-font-family: cursive;
-font-size: 100% ;
+form p{
+  font-family: cursive;
+  text-align: center;
+  font-size:130% ;
+  color:beige;
 }
+.respuesta{
+  font-family: cursive;
+  text-align: center;
+  font-size:140% ;
+  color:beige;
+}
+
 .tipo{
   clear: both;
   font-family: cursive;
@@ -196,11 +203,12 @@ color: #C96474;
 }
 .titulosub{
   font-family: cursive;
-  color: #F8A6AC;
+  color:#C96474;
+  font-size: 140%;
 }
 .Suscripcion{
   clear: both;
-  border: 3px solid #F8A6AC; 
+  border: 3px solid #C96474; 
   width: 70%;
   left:70% ;
   text-align: center;
@@ -208,14 +216,18 @@ color: #C96474;
   background: beige;
   
 }
-form{
+.formulario{
   font-family: cursive;
-  color: #F8A6AC;
+  color:#C96474;
   
 }
+form{
+  font-family: cursive;
+  color:#C96474;
+}
 .boton{
-  background:  #F8A6AC;
+  background:#C96474 ;
   font-family: cursive;
   color: beige;
-
+font-size: 100%;
 }

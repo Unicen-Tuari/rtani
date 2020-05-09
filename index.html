@@ -22,13 +22,13 @@
         </nav>
     </div>
    
-    <p class="nombrepag"> Si el mundo de la cocina te fascina, en Mis recetas descubrirás  recetas riquísimas  saladas y 
+  
+    <p class="reseña"> Si el mundo de la cocina te fascina, en Mis recetas descubrirás  recetas riquísimas  saladas y 
         dulces que deleitarán incluso a los paladares más exigentes. En nuestra web encontrarás todo tipo de recetas de
         cocina capaces de sorprender a los paladares
         más exquisitos.Ademas cada receta contiene su tabla nutricional!
     </p>
-    <hr>    
-    <h2 class ="subtitulo">Algunas de las recetas que encontraras en esta web </h2>
+    <h2 class ="subtitulo"> Recetas que encontraras en esta web </h2>
  
     <div class="clase">
         <h3 class="nombrereceta">Tarta de choclo</h3>
@@ -59,16 +59,18 @@
         <h3 class="nombrereceta">Torta de ricota</h3>
         <img  class="images"src="images/torta.jpg" alt="foto de Torta">
     </div>
-    <div class="javascript">
-    <p class="pregunta">¿No sabes que receta elegir?</p> 
-    <p class="pregunta">  Elige el tipo que mas te guste y nosotros te ayudaremos</p>
-        <form name="formulario_random" enctype="text"> 
-            <p> Receta Salada  <input id="receta_salada" type="radio" name="Check1"> </p> 
-            <p> Receta Dulce <input id="receta_dulce" type="radio" name="Check1" > <br></p>   
-            <p class= "respuesta">La receta salada que elegimos para vos es :  <span id = "mostrar_salado"> <br> </span> </p>
-            <p class="respuesta">La receta dulce que elegimos para vos es :  <span id = "mostrar_dulce">  </span> </p>
+    
+    <h3 class="pregunta">¿No sabes que receta elegir?</h3> 
+  
+     
+      <form class="random" name="formulario_random" enctype="text"> 
+            <p class="respuesta">  Elige el tipo que mas te guste y nosotros te ayudaremos</p>
+            <p class="input"> Receta Salada <input id="receta_salada" type="radio" name="Check1"> </p> 
+            <p class="input"> Receta Dulce <input id="receta_dulce" type="radio" name="Check1" > <br></p>   
+            <p class= "respuesta">La receta SALADA que elegimos para vos es :  <span id = "mostrar_salado"> <br> </span> </p>
+            <p class="respuesta">La receta DULCE que elegimos para vos es :  <span id = "mostrar_dulce">  </span> </p>
             </form> 
-        </div>
-            <script src="java/main.js"></script>
+        
+        <script src="javascript/main.js"></script>
 </body> 
 </html>

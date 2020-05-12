@@ -1,6 +1,6 @@
 "use strict";
-let recetas_dulce = ["panqueques", "flan", "torta frita","torta de manzana","buñuelos","torta de ricota"];
-let recetas_salada = [ "tortilla", "tarta de choclo","buñuelos de espinaca ","hamburguesas de lentejas" , "mac and chese","albondigas"];
+let recetas_dulce = ["Panqueques", "Flan", "Torta frita","Torta de manzana","Buñuelos","Torta de ricota"];
+let recetas_salada = [ "Tortilla", "Tarta de choclo","Buñuelos de espinaca ","Hamburguesas de lentejas" , "Mac and chese","Albondigas"];
 let recetasalada = document.getElementById("receta_salada");
 recetasalada.addEventListener("click", mostrar_receta_salada);
 let recetadulce= document.getElementById("receta_dulce");
@@ -28,7 +28,7 @@ function obtener_receta_salada(){
 
   function obtener_receta_dulce(){
     let receta_elegida_dulce;
-   if(  recetadulce.checked ){
+   if(recetadulce.checked ){
     receta_elegida_dulce = recetas_dulce[dulce(recetas_dulce.length)];
  }
     return receta_elegida_dulce;

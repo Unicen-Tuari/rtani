@@ -11,15 +11,14 @@
     width: 5%;
     margin-left: 2%;
     float: left;
-    margin-right: 0;
-    border-radius: 30px;
+   border-radius: 30px;
 }
  
 h1{
     margin-bottom: 4%;
     float: left;
     margin-left:1%;
-    font-family: cursive;
+    font-family:cursive,Arial, Helvetica, sans-serif;
     font-size: 150%;
     color: cornsilk;
     margin-top: 3%;
@@ -33,7 +32,7 @@ nav{
 }  
 
 a{
-    font-family: cursive;
+    font-family:cursive,Arial, Helvetica, sans-serif;
     color:cornsilk;
     font-size: 130%;
     padding: 2%;
@@ -42,33 +41,29 @@ a{
     
 a:hover{
     background:#F8A6AC ;
-    text-decoration: none;
+   
 }
   
 .reseña{
     clear: both;
-    font-family: cursive;
+    font-family: cursive,Arial, Helvetica, sans-serif;;
     font-size:150% ;
     text-align: center;
-    border-radius: 10px;
     margin-left: 10%;
     margin-right: 10%;
     color: #C96474;
 }
    
 .subtitulo{
-    font-family: cursive;
+    font-family: cursive,Arial, Helvetica, sans-serif;;
     margin: 0 auto;
     text-align: center;
     font-size:170% ;
     color: #C96474;
-    border-radius: 10px;
-    width: 60%;
-    left:60% ;
-} 
+   } 
    
 .nombrereceta{
-    font-family: cursive;
+    font-family: cursive,Arial, Helvetica, sans-serif;;
     text-align: center;
     color: #C96474 ;
     font-size: 125%;
@@ -89,11 +84,12 @@ a:hover{
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
-    object-fit: cover;
+    border-radius: 5px;
+   
 }
 .pregunta{
     clear: both;
-    font-family: cursive;
+    font-family:cursive,Arial, Helvetica, sans-serif;;
     text-align: center;
     font-size:185% ;
     color:#C96474;
@@ -106,11 +102,10 @@ a:hover{
     margin-right: 10%;
 }
 .input {
-   
-float: left;
-color :beige;
-font-size: 150%;
-margin-left: 22%;
+  float: left;
+  color :beige;
+  font-size: 150%;
+  margin-left: 22%;
 }
 .respuesta{
     clear: both;
@@ -123,7 +118,7 @@ margin-left: 22%;
 /*css de receta salada y dulce*/
 .tipo{
     clear: both;
-    font-family: cursive;
+    font-family: cursive,Arial, Helvetica, sans-serif;
     text-align: center;
     font-size:156.25% ;
     color:beige;
@@ -144,9 +139,9 @@ margin-left: 22%;
 }
   
 .recetanombre{
-    font-family: cursive;
+    font-family:cursive,Arial, Helvetica, sans-serif;
     text-align: center;
-    font-size: 130%;
+    font-size: 190%;
     color:  #C96474;
 }
   
@@ -154,8 +149,10 @@ margin-left: 22%;
     margin-top: 3%;
     width: 38%;
     margin-left: 15%;
-    float: left;
     margin-bottom: 4%;
+    border-radius: 5px;
+    float: left;
+
 }
   
 .ingrediente{
@@ -166,23 +163,25 @@ margin-left: 22%;
 h4{
     margin-left: 8%;
     font-size: 135%;
+    color:#C96474;
+    font-family:cursive,Arial, Helvetica, sans-serif;
 }
 ul{
     font-size: 125%;
-    font-family: cursive;
+    font-family:cursive,Arial, Helvetica, sans-serif;
 }
 
 .pasos{
     clear: both;
-    font-size:156.25%  ;
+    font-size:156.25%;
     color: #C96474;
     text-align: center;
-    font-family: cursive;
+    font-family: cursive,Arial, Helvetica, sans-serif;
 }
 
 ol{
     font-size:106.25% ;
-    font-family: cursive;  
+    font-family: cursive,Arial, Helvetica, sans-serif;  
     margin-left: 5%;
     margin-right: 5%; 
 }
@@ -190,10 +189,9 @@ ol{
 h5{
     font-size: 156.25% ;  
     color: #C96474;
-    font-family: cursive;
+    font-family:cursive,Arial, Helvetica, sans-serif;
     text-align: center;
-    margin-top: 5%;
-}
+    }
 
 table{
     border-collapse: collapse;
@@ -203,18 +201,18 @@ table{
 th{
     border-collapse: collapse;  
     border: 3px solid #F8A6AC;  
-    font-family: cursive;
+    font-family:cursive,Arial, Helvetica, sans-serif;
     color: #C96474; 
 }
 td{
     border: 3px solid #F8A6AC;
     font-size:106.25% ;
     text-align: center;
-    font-family: cursive;
+    font-family: cursive,Arial, Helvetica, sans-serif;
 }
 /*css de suscripcion*/
 .titulosub{
-    font-family: cursive;
+    font-family:cursive,Arial, Helvetica, sans-serif;
     color:#C96474;
     font-size: 140%;
 }
@@ -223,26 +221,20 @@ td{
   clear: both;
   border: 3px solid #C96474; 
   width: 70%;
-  left:70% ;
   text-align: center;
   margin: 0 auto;
   background: beige;
   border-radius: 10px;
 }
 
-.formulario{
-    font-family: cursive;
-    color:#C96474;
-}
-
 form{
-    font-family: cursive;
+    font-family:cursive,Arial, Helvetica, sans-serif;
     color:#C96474;
 }
 
 .boton{
     background:#C96474 ;
-    font-family: cursive;
+    font-family: cursive,Arial, Helvetica, sans-serif;
     color: beige;
-    font-size: 100%;
+    font-size: 110%;
 }

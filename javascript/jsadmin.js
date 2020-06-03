@@ -5,6 +5,6 @@
   
     feather.replace()
   
-    // Graphs
+    // Graph
    
   }())

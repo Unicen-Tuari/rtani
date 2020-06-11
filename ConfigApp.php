@@ -9,6 +9,7 @@ class ConfigApp{
         'insert'=> 'Agregar_receta',
         'borrarReceta' => 'borrarReceta',
         'finalizar' => 'finalizar',
+        'mirar'=> 'mirar_receta'
     ];
 }
 ?>

@@ -1,8 +1,3 @@
-<?php
-include_once('data.php');
-function admin_recipes($member = null){
-
-?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -23,7 +18,6 @@ function admin_recipes($member = null){
   <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  
   <ul class="navbar-nav px-3">
     <li class="nav-item text-nowrap">
      <a class="nav-link" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
@@ -41,7 +35,13 @@ function admin_recipes($member = null){
     </div>
   </ul>
 </nav>
+<?php
+include_once('data.php');
+function admin_recipes($member = null){
 
+?>
+
+  
 <div class="container-fluid">
   <div class="row">
     <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
@@ -73,7 +73,7 @@ function admin_recipes($member = null){
         <h1 class="h2">Recetas</h1>
         <div class="btn-toolbar mb-2 mb-md-0">
           <div class="btn-group mr-2">
-          <a href="insert"> nueva receta <span >
+          <a href="insert"> <button type="button" class="btn btn-light">Nueva Receta</button> </a >
           </div>
         
         </div>
@@ -102,7 +102,7 @@ function admin_recipes($member = null){
            echo '<td>'.$receta['finalizada'].'</td>';
           
       ?>   
-             <td><a href="a"><span data-feather="edit">
+             <td><a href="mirar/ <?php echo $receta['id_receta'] ;?> "><span data-feather="eye">
              <a href="finalizar/ <?php echo $receta['id_receta'] ;?> "><span data-feather="check"></span>
                 <a href="borrarReceta/ <?php echo $receta['id_receta'] ;?> "><span data-feather="delete"></span>
               </span></td>
@@ -136,4 +136,25 @@ function finalizar ($params){
   fin_receta ($params[0]);
   header ("location: ../home");
 }
+function mirar_receta ($params){
+  $receta= obtenerreceta($params[0]);
+
+  ?>
+   <h1><?echo $receta['titulo'];?> </h1>
+   <h2><? echo $receta['ingrediente'];?> </h2>
+   
+  
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+        <script src="javascript/jsadmin.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+      </body>
+</html>
+<?php
+
+}
 ?>
+  

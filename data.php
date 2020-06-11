@@ -24,4 +24,10 @@ function  fin_receta ($id_receta ){
    $sentencia->execute(array($id_receta));
    
 }
+function  obtenerreceta ($id_receta){
+   $db = new PDO('mysql:host=localhost;'.'dbname=mis_recetas;charset=utf8', 'root', '');
+   $sentencia = $db->prepare( "select * from receta where $id_receta=?");
+   $sentencia->execute(array($id_receta));
+   return $sentencia->Fetch();
+}
 ?>

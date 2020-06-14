@@ -1,4 +1,27 @@
-<!doctype html>
+<?php
+/* Smarty version 3.1.34-dev-7, created on 2020-06-14 16:49:34
+  from 'C:\xampp\htdocs\vscode\rtani\templates\header.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.34-dev-7',
+  'unifunc' => 'content_5ee638fe7cb316_33760790',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    'de0c8ae7cb752fa3d1341fe72f679a3612e17dbc' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\vscode\\rtani\\templates\\header.tpl',
+      1 => 1592146151,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5ee638fe7cb316_33760790 (Smarty_Internal_Template $_smarty_tpl) {
+?><!doctype html>
 <html lang="en">
 
 <head>
@@ -69,4 +92,5 @@
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
                 <div
                     class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                    <h1 class="h2">Recetas</h1>
+                    <h1 class="h2">Recetas</h1><?php }
+}

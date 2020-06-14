@@ -1,4 +1,27 @@
-<!DOCTYPE html>
+<?php
+/* Smarty version 3.1.34-dev-7, created on 2020-06-14 16:38:54
+  from 'C:\xampp\htdocs\vscode\rtani\templates\sweetrecipes.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.34-dev-7',
+  'unifunc' => 'content_5ee6367e750068_01994857',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '2afa4dd83bfccbd9529e60fdb1d0f641aefd5dd8' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\vscode\\rtani\\templates\\sweetrecipes.tpl',
+      1 => 1592145242,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5ee6367e750068_01994857 (Smarty_Internal_Template $_smarty_tpl) {
+?><!DOCTYPE html>
 <html>
    <head>
       <meta charset='utf-8'>
@@ -523,4 +546,5 @@
          </table>
       </div>
    </body> 
-</html> 
+</html> <?php }
+}

@@ -5,7 +5,11 @@ require_once "Agregar_receta.php";
 require_once "recipesview.php";
 require_once "recipescontroller.php";
 require_once "recipesmodel.php";
-
+require_once "categoria.php";
+require_once "index.php";
+/*require_once "salatyRecipes.php";*/
+require_once "sweetRecipes.php";
+require_once "subscription.php";
 function parceURL($url){
 
     $partesURL = explode("/", $url);

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,16 +10,15 @@
     <script src='main.js'></script>
 </head>
 <body>
-
-    <div class="encabezado">
+ <div class="encabezado">
         <img class="logo "src="images/logo.png" alt="foto del logo">
         <h1> Mis Recetas</h1>
         <nav>
-            <a  href="index.html">Inicio</a>
-            <a href="saltyRecipes.html"> Recetas Saladas</a>
-            <a href="SweetRecipes.html">Recetas Dulces</a>
-            <a target='blank' href="subscription.html">Suscribirme</a>
-        </nav>
+               <a  href="home_pag">Inicio</a>
+               <a  href="pag_sweet">Recetas Dulces</a>
+               <a href="pag_salty"> Recetas Saladas</a>
+               <a href="pag_subscription">Suscribirme</a>
+         </nav>
     </div>
    
   
@@ -75,3 +73,6 @@
         <script src="javascript/main.js"></script>
 </body> 
 </html>
+<?php
+}
+?>

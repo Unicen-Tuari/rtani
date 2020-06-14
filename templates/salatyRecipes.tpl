@@ -13,11 +13,11 @@
         <img class="logo "src="images/logo.png" alt="foto del logo">
         <h1> Mis Recetas</h1>
             <nav>
-                <a  href="index.html">Inicio</a>
-                <a href="saltyRecipes.html"> Recetas Saladas</a>
-                <a href="SweetRecipes.html">Recetas Dulces</a>
-                <a href="subscription.html">Suscribirme</a>
-            </nav>
+               <a  href="home_pag">Inicio</a>
+               <a  href="pag_sweet">Recetas Dulces</a>
+               <a href="pag_salty"> Recetas Saladas</a>
+               <a href="pag_subscription">Suscribirme</a>
+         </nav>
     </div>
 
     <h2 class="tipo">  Recetas Saladas</h2>

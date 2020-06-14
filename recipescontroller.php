@@ -37,5 +37,21 @@ require_once "recipesmodel.php";
       $this-> model-> insertReceta($_GET["titulo"],$_GET["ingrediente"], $_GET["categoria"]);
       header ("location: home");
     }
+    function categoria($member = null){
+      $recetas=$this -> model -> obtener_receta();
+      $this ->  view -> categoria ( $recetas);
+      }
+      function  home_pag($member = null){
+        $this ->  view ->  home_pag( );
+       }
+       function   pag_salaty($member = null){
+        $this ->  view ->   pag_salaty( );
+       }
+       function   pag_sweet($member = null){
+        $this ->  view ->   pag_sweet( );
+       }
+       function   pag_subscription ($member = null){
+        $this ->  view ->   pag_subscription( );
+       }
   }
  ?>

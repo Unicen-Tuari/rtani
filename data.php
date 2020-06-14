@@ -6,7 +6,7 @@
     $sentencia->execute();
     return $sentencia->FetchAll();
  }
- function  insertReceta ($titulo ,$ingrediente,$categoria ){
+ function  insertReceta  ($titulo ,$ingrediente,$categoria ){
    $db = new PDO('mysql:host=localhost;'.'dbname=mis_recetas;charset=utf8', 'root', '');
    $sentencia = $db->prepare( "INSERT INTO receta(titulo,ingrediente,categoria) VALUES(?,?,?)");
    $sentencia->execute(array($titulo,$ingrediente,$categoria));

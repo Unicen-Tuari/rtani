@@ -5,12 +5,12 @@ class ConfigApp{
     public static $PARAMS = "params";
     public static $ACTIONS = [
         
-        'home' => 'admin_recipes',
-        'insertarReceta' => 'insertarReceta',
-        'insert'=> 'Agregar_receta',
-        'borrarReceta' => 'borrarReceta',
-        'finalizar' => 'finalizar',
-        'mirar'=> 'mirar_receta'
+        'home' => 'recipescontroller#admin_recipes',
+        'insertarReceta' => 'recipescontroller#insertar',
+        'insert'=> 'recipescontroller#Agregar_receta',
+        'borrarReceta' => 'recipescontroller#borrarReceta',
+        'finalizar' => 'recipescontroller#finalizar',
+        'mirar'=> 'recipescontroller#mirar_receta'
     ];
 }
 ?>

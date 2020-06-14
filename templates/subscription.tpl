@@ -15,7 +15,7 @@
         <nav>
                <a  href="home_pag">Inicio</a>
                <a  href="pag_sweet">Recetas Dulces</a>
-               <a href="pag_salty"> Recetas Saladas</a>
+               <a href="pag_salaty"> Recetas Saladas</a>
                <a href="pag_subscription">Suscribirme</a>
          </nav>
      </div>

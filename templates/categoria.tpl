@@ -58,7 +58,7 @@
                         </li>
                          <li class="nav-item">
               <a class="nav-link" href="home_pag">
-                <span data-feather="award"></span>
+                <span data-feather="home"></span>
                 Home Mis Recetas
               </a>
             </li>

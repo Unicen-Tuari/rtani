@@ -34,6 +34,7 @@ class recipesmodel {
        $sentencia->execute(array($id_receta));
        return $sentencia->Fetch();
     }
+  
    
 
 }

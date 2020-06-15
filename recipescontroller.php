@@ -57,5 +57,6 @@ require_once "recipesmodel.php";
         $recetas=$this -> model -> obtener_receta();
         $this ->  view ->   pag_subscription( $recetas );
        }
+       
   }
  ?>

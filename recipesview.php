@@ -42,6 +42,8 @@ function pag_subscription ( $recetas ){
     $this ->  smarty->assign('recetas',$recetas);
     $this ->  smarty->display('templates/subscription.tpl');
 }
-   }
 
-   ?>
+
+}
+ 
+ ?>

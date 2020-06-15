@@ -42,16 +42,20 @@ require_once "recipesmodel.php";
       $this ->  view -> categoria ( $recetas);
       }
       function  home_pag($member = null){
+
         $this ->  view ->  home_pag( );
        }
        function   pag_salaty($member = null){
-        $this ->  view ->   pag_salaty( );
+        $recetas=$this -> model -> obtener_receta();
+        $this ->  view ->   pag_salaty( $recetas );
        }
        function   pag_sweet($member = null){
-        $this ->  view ->   pag_sweet( );
+        $recetas=$this -> model -> obtener_receta();
+        $this ->  view ->   pag_sweet( $recetas );
        }
        function   pag_subscription ($member = null){
-        $this ->  view ->   pag_subscription( );
+        $recetas=$this -> model -> obtener_receta();
+        $this ->  view ->   pag_subscription( $recetas );
        }
   }
  ?>

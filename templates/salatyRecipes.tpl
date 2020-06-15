@@ -21,18 +21,20 @@
     </div>
 
     <h2 class="tipo">  Recetas Saladas</h2>
+    {foreach from=$recetas item=$receta}
+    {if $receta['categoria'] eq "Salada"}
+
+
     <div class="receta">
-        <h3 class="recetanombre">Tarta de choclo</h3>
-        <img class="imagen" src="images/tarta.jpg" alt="foto de tarta">
+        <h3 class="recetanombre">{$receta['titulo']}</h3>
+        <img class="imagen" src="images/imagen-no-encontrada.jpg" alt="foto de tarta">
+        
         <div class="ingrediente">	
             <h4>Ingredientes:</h4> 
             <ul>
-                <li>280 g harina 0000</li>
-                <li>100 g manteca</li>
-                <li>2 huevos</li>
-                <li>4 cucharadas azúcar</li>
-                <li>1 lata choclo </li>
-                <li> 1 cebolla mediana</li>
+                
+                <li>{$receta['ingrediente']}</li>
+               
             </ul>
         </div>
     
@@ -121,7 +123,8 @@
                 </tr>
         </table>
     </div>
-
+    {/if}
+    {/foreach}
     <div class="receta">
     <h3 class="recetanombre">Buñuelos de espinaca </h3>
     <img class="imagen" src="images/bunuelos.jpg" alt="foto de buñuelos">

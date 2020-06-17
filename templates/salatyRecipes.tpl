@@ -27,7 +27,7 @@
 
     <div class="receta">
         <h3 class="recetanombre">{$receta['titulo']}</h3>
-        <img class="imagen" src="images/imagen-no-encontrada.jpg" alt="foto de tarta">
+        <img class="imagen" src="images/imagen-no-encontrada.jpg" alt="foto no encontrada">
         
         <div class="ingrediente">	
             <h4>Ingredientes:</h4> 

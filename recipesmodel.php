@@ -6,11 +6,11 @@ class recipesmodel {
     $this -> db = new PDO('mysql:host=localhost;'.'dbname=mis_recetas;charset=utf8', 'root', '');
     }
     function  obtener_receta (){
-       
         $sentencia = $this -> db->prepare( "select * from receta");
         $sentencia->execute();
         return $sentencia->FetchAll();
      }
+     
      function  insertReceta  ($titulo ,$ingrediente,$categoria ){
        $sentencia =  $this -> db->prepare( "INSERT INTO receta(titulo,ingrediente,categoria) VALUES(?,?,?)");
        $sentencia->execute(array($titulo,$ingrediente,$categoria));

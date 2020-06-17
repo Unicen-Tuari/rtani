@@ -48,6 +48,8 @@ require_once "recipesmodel.php";
        function   pag_salaty($member = null){
         $recetas=$this -> model -> obtener_receta();
         $this ->  view ->   pag_salaty( $recetas );
+      
+
        }
        function   pag_sweet($member = null){
         $recetas=$this -> model -> obtener_receta();

@@ -21,16 +21,19 @@
       </div>
 
       <h2 class="tipo">  Recetas Dulces</h2>
+      {foreach from=$recetas item=$receta}
+    {if $receta['categoria'] eq "Dulce"}
       <div class="receta">
-         <h3 class="recetanombre">Panqueques</h3>
-         <img class="imagen" src="images/panqueques.jpg" alt="foto de tarta">
-         <div class="ingrediente">	
-         <h4>Ingredientes:</h4> 
-         <ul>
-            <li>2 huevos</li>
-            <li>220g harina 0000</li>
-            <li>1/2 litro de leche</li>
-         </ul>
+         <h3 class="recetanombre">{$receta['titulo']}</h3>
+        <img class="imagen" src="images/imagen-no-encontrada.jpg" alt="foto no encontrada">
+        
+        <div class="ingrediente">	
+            <h4>Ingredientes:</h4> 
+            <ul>
+                
+                <li>{$receta['ingrediente']}</li>
+               
+            </ul>
       </div>
 
       <h4 class="pasos">Pasos a seguir:</h4>
@@ -186,7 +189,8 @@
 
       </table>
       </div>
-
+      {/if}
+      {/foreach}
       <div class="receta">
          <h3 class="recetanombre">Buñuelos</h3>
          <img class="imagen" src="images/buñuelos.jpg" alt="foto de buñuelos">

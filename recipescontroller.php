@@ -12,35 +12,42 @@ require_once "recipesmodel.php";
         $this ->  model = new recipesmodel();
     }
 
-    function mirar_receta ($params){
-        $receta= $this -> model ->  obtenerreceta($params[0]);
-        $this ->  view -> mirar_receta ($receta);
-      }
+   
     function admin_recipes($member = null){
     $recetas=$this -> model -> obtener_receta();
     $this ->  view -> admin_recipes ( $recetas);
+    }
+    function categoria($member = null){
+      $categoria= $this -> model -> obtener_categoria();
+      $this ->  view -> categoria( $categoria) ;
     }
 
     function borrarReceta ($params){
         $this->model->  eliminarReceta ($params[0]);
         header ("location: ../home");
       }
+      function borrarcategoria ($params){
+        $this->model->  eliminarcategoria($params[0]);
+        header ("location: ../categoria");
+      }
       function finalizar ($params){
         $this->model-> fin_receta ($params[0]);
         header ("location: ../home");
       }
       function Agregar_receta($member = null){
-        $this ->  view ->Agregar_receta ( );
+      $this ->  view ->Agregar_receta ( );
        }
     
     function insertar (){
       $this-> model-> insertReceta($_GET["titulo"],$_GET["ingrediente"], $_GET["categoria"]);
       header ("location: home");
     }
-    function categoria($member = null){
-      $recetas=$this -> model -> obtener_receta();
-      $this ->  view -> categoria ( $recetas);
-      }
+    function insertar_categoria (){
+      $this-> model-> insert_categoria($_GET["id_categoria"],$_GET["nombre"]);
+      header ("location: categoria");
+    }
+    
+    
       function  home_pag($member = null){
 
         $this ->  view ->  home_pag( );

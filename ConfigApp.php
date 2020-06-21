@@ -7,10 +7,11 @@ class ConfigApp{
         
         'home' => 'recipescontroller#admin_recipes',
         'insertarReceta' => 'recipescontroller#insertar',
+        'insertar_categoria' => 'recipescontroller#insertar_categoria',
         'insert'=> 'recipescontroller#Agregar_receta',
         'borrarReceta' => 'recipescontroller#borrarReceta',
+        'borrarcategoria' => 'recipescontroller#borrarcategoria',
         'finalizar' => 'recipescontroller#finalizar',
-        'mirar'=> 'recipescontroller#mirar_receta',
         'categoria'=>'recipescontroller#categoria',
         'home_pag'=>'recipescontroller#home_pag',
         'pag_salaty'=>'recipescontroller#pag_salaty',

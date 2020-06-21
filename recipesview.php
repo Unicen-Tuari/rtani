@@ -8,22 +8,16 @@ class  recipesview{
         $this->smarty = new Smarty;
     }
 
-        function mirar_receta ( $receta){
-         $this -> smarty->assign('receta',$receta);
-         $this -> smarty->display('templates/receta.tpl');
-      
-      
-      }
+   
       function admin_recipes($recetas){
         $this ->  smarty->assign('recetas',$recetas);
         $this ->  smarty->display('templates/admin_recipes.tpl');
     }
     function Agregar_receta( ){
-  
-        $this ->  smarty->display('templates/Agregar_receta.tpl');
+  $this ->  smarty->display('templates/Agregar_receta.tpl');
 }
-    function categoria( $recetas){
-    $this ->  smarty->assign('recetas',$recetas);
+    function categoria( $categorias){
+    $this ->  smarty->assign('categoria',$categorias);
     $this ->  smarty->display('templates/categoria.tpl');
 }
 function  home_pag ( ){

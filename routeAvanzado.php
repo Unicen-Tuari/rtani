@@ -3,6 +3,10 @@ require_once "ConfigApp.php";
 require_once "recipesview.php";
 require_once "recipescontroller.php";
 require_once "recipesmodel.php";
+require_once "usuariosview.php";
+require_once "usuarioscontroller.php";
+require_once "usuariosmodel.php";
+
 
 function parceURL($url){
 
@@ -21,8 +25,7 @@ $actionName = $urlData[ConfigApp::$ACTION];
 
 if(array_key_exists($actionName, ConfigApp::$ACTIONS)){
     $params = $urlData[ConfigApp::$PARAMS];
-
-    $controllerMetodo = explode('#', ConfigApp::$ACTIONS[$actionName]);
+   $controllerMetodo = explode('#', ConfigApp::$ACTIONS[$actionName]);
     $controller = new $controllerMetodo[0];
     $methodName = $controllerMetodo[1];
 

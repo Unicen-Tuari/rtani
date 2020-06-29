@@ -31,11 +31,11 @@
 
                                 <td>{$receta['id_receta']}</td>
                                 <td>{$receta['titulo']}</td>
-                                <td>{$receta['fk_id_categoria']}</td>
+                                <td>{$categorias[$receta['fk_id_categoria']-8]['nombre']}</td>
                                 <td>{$receta['finalizada']}</td>
 
 
-                                <td><a href="mirar/{$receta['id_receta']} "><span data-feather="eye">
+                                <td>
                                             <a href="finalizar/{$receta['id_receta']}"><span
                                                     data-feather="check"></span>
                                                 <a href="borrarReceta/{$receta['id_receta']} "><span

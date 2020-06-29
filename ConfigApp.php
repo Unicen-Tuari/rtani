@@ -1,5 +1,7 @@
 <?php
 
+define('BASE_URL','//'.$_SERVER['SERVER_NAME'] . ':' .$_SERVER['SERVER_PORT'] . dirname($_SERVER['PHP_SELF']) . '/');
+
 class ConfigApp{
     public static $ACTION = "action";
     public static $PARAMS = "params";
@@ -12,11 +14,17 @@ class ConfigApp{
         'borrarReceta' => 'recipescontroller#borrarReceta',
         'borrarcategoria' => 'recipescontroller#borrarcategoria',
         'finalizar' => 'recipescontroller#finalizar',
-        'categoria'=>'recipescontroller#categoria',
+        'categoria'=>'recipescontroller#view_categorias',
         'home_pag'=>'recipescontroller#home_pag',
-        'pag_salaty'=>'recipescontroller#pag_salaty',
-        'pag_sweet'=>'recipescontroller#pag_sweet',
-        'pag_subscription'=>'recipescontroller#pag_subscription'
+        'pag_subscription'=>'recipescontroller#pag_subscription',
+        'categorias' => 'recipescontroller#viewrecetas',
+        'login' => 'UsuariosController#login',
+        'registrarse' => 'UsuariosController#registrarse',
+        'registro' => 'UsuariosController#registro',
+        'ingresar' => 'UsuariosController#ingresar',
+        'logout' => 'UsuariosController#logout'
+
+        
     ];
 }
 ?>

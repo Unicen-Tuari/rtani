@@ -26,19 +26,10 @@
             <li class="nav-item text-nowrap">
                 <a class="nav-link" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
                     aria-controls="collapseExample">
-                    Rosario Tani
-                </a>
+                     <a href ='logout'class="nav-link">Salir del perfil</a>
+                       </a>
             </li>
-
-            <div class="collapse" id="collapseExample">
-                <div>
-                    <li class="nav-item text-nowrap">
-                        <a class="nav-link"> Mi perfil</a>
-                        <a class="nav-link">Salir de mi perfil</a>
-                    </li>
-                </div>
-            </div>
-        </ul>
+ </ul>
     </nav>
     <div class="container-fluid">
         <div class="row">

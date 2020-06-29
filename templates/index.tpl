@@ -7,17 +7,17 @@
     <link rel ="shortcut icon" type="image/x-icon"href="images/logo.png">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' href="css/style.css">
-    <script src='main.js'></script>
 </head>
 <body>
  <div class="encabezado">
         <img class="logo "src="images/logo.png" alt="foto del logo">
         <h1> Mis Recetas</h1>
         <nav>
-               <a  href="home_pag">Inicio</a>
-               <a  href="pag_sweet">Recetas Dulces</a>
-               <a href="pag_salaty"> Recetas Saladas</a>
-               <a href="pag_subscription">Suscribirme</a>
+            <a  href="home_pag">Inicio</a>
+            <a href="pag_subscription">Suscribirme</a>
+            {foreach from= $categoria item=$categorias}
+            <a  href="categorias/{$categorias['id_categoria']}">{$categorias['nombre']}</a>
+            {/foreach}
          </nav>
     </div>
    
@@ -69,10 +69,7 @@
             <p class= "respuesta">La receta salada que elegimos para vos es :  <span id = "mostrar_salado"> <br> </span> </p>
             <p class="respuesta">La receta dulce que elegimos para vos es :  <span id = "mostrar_dulce">  </span> </p>
             </form> 
-        
+        <script src='main.js'></script>
         <script src="javascript/main.js"></script>
 </body> 
 </html>
-<?php
-}
-?>

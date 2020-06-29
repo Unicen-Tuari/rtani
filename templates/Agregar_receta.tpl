@@ -11,8 +11,12 @@
               <textarea class="form-control" id="ingrediente" name="ingrediente" rows="3"></textarea>
             </div>
             <div class="form-group">
-              <label for="categoria">Categoria</label>
-              <input type="text" class="form-control" id="categoria" name="categoria" placeholder="categoria">
+              <label>Categoria</label>
+              <select id="categoria" name="categoria">
+                {foreach from= $categorias item=$categoria}
+                <option value="{{$categoria['id_categoria']}}">{{$categoria['nombre']}}</option>
+                {/foreach}
+              </select>
             </div>
             <div class="form-group">
               <input class="btn btn-primary" type="submit" value="Crear">

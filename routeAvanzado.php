@@ -34,8 +34,6 @@ if(array_key_exists($actionName, ConfigApp::$ACTIONS)){
     }else{
         echo $controller->$methodName();
     }
-}else{
-    echo $controller->admin_recipes();
 }
 
 ?>

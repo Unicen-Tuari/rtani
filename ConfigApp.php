@@ -6,7 +6,7 @@ class ConfigApp{
     public static $ACTION = "action";
     public static $PARAMS = "params";
     public static $ACTIONS = [
-        
+        ''=> 'recipescontroller#admin_recipes',
         'home' => 'recipescontroller#admin_recipes',
         'insertarReceta' => 'recipescontroller#insertar',
         'insertar_categoria' => 'recipescontroller#insertar_categoria',

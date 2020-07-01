@@ -17,9 +17,10 @@
                
                {foreach from=$categorias item=$categoria}
                <a href="categorias/{$categoria['id_categoria']}">{$categoria['nombre']}</a>
-                {/foreach}
+               
                <a href="pag_subscription">Suscribirme</a>
                <a href="home_pag">Inicio</a>
+               {/foreach}
          </nav>
     </div>
    <h2 class="tipo"> {{$titulo}}</h2>

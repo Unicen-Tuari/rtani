@@ -10,6 +10,7 @@
               <label for="ingrediente">Ingredientes</label>
               <textarea class="form-control" id="ingrediente" name="ingrediente" rows="3"></textarea>
             </div>
+           
             <div class="form-group">
               <label>Categoria</label>
               <select id="categoria" name="categoria">

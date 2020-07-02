@@ -28,8 +28,8 @@ $actionName = $urlData[ConfigApp::$ACTION];
 
 if(array_key_exists($actionName, ConfigApp::$ACTIONS)){
     $params = $urlData[ConfigApp::$PARAMS];
-    $controllerMetodoo = explode('/', ConfigApp::$ACTIONS[$actionName]);
-    $controllerMetodo = explode('#',$controllerMetodoo [1]);
+    $controllerMetodos = explode('/', ConfigApp::$ACTIONS[$actionName]);
+    $controllerMetodo = explode('#',$controllerMetodos [1]);
     $controller = new $controllerMetodo[0];
     $methodName = $controllerMetodo[1];
 

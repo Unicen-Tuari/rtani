@@ -12,15 +12,8 @@ class recipesmodel {
       $sentencia->execute();
       return $sentencia->FetchAll();
    }
-    
-   
-  
-   
-  
-   
-     
-   function  insertReceta  ($titulo ,$ingrediente,$categoria ){
-      $sentencia =  $this -> db->prepare( "INSERT INTO receta(titulo,ingrediente,fk_id_categoria) VALUES(?,?,?)");
+     function  insertReceta  ($titulo ,$ingrediente ,$categoria ){
+      $sentencia =  $this -> db->prepare( "INSERT INTO receta( titulo,ingrediente,fk_id_categoria) VALUES(?,?,?)");
       $sentencia->execute(array($titulo,$ingrediente,$categoria));
    }
    

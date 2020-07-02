@@ -37,13 +37,8 @@
 
         <h4 class="pasos">Pasos a seguir:</h4>
         <ol>
-            <li></li>
-                <br>
-            <li></li>
-                <br>
-            <li></li>
-                <br>
-            <li> </li>
+           
+          
         </ol>
        
        

@@ -57,9 +57,9 @@ class recipescontroller {
   }
     
   function insertar (){
-    $this-> model-> insertReceta($_GET["titulo"],$_GET["ingrediente"], $_GET["categoria"]);
+    $this-> model-> insertReceta($_GET["titulo"],$_GET["ingrediente"] , $_GET["categoria"]);
     header ("location: home");
-  }
+ }
     function   pag_subscription ($member = null){
     $categorias = $this-> categoria_model-> obtener_categoria();
     $recetas=$this -> model -> obtener_receta();

@@ -32,8 +32,14 @@
                                 <td>{$receta['id_receta']}</td>
                                 <td>{$receta['titulo']}</td>
                                 <td>{$categorias[$receta['fk_id_categoria']-8]['nombre']}</td>
-                                <td>{$receta['finalizada']}</td>
 
+                                <td> 
+                                    {if $receta['finalizada']}
+                                    <div class="badge badge-secondary text-wrap" style="width: 6rem;">
+                                        Finalizada
+                                    </div>
+                                    {/if}
+                                </td>
 
                                 <td>
                                             <a href="finalizar/{$receta['id_receta']}"><span

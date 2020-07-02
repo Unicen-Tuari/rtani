@@ -6,23 +6,23 @@ class ConfigApp{
     public static $ACTION = "action";
     public static $PARAMS = "params";
     public static $ACTIONS = [
-        ''=> 'recipescontroller#admin_recipes',
-        'home' => 'recipescontroller#admin_recipes',
-        'insertarReceta' => 'recipescontroller#insertar',
-        'insertar_categoria' => 'recipescontroller#insertar_categoria',
-        'insert'=> 'recipescontroller#Agregar_receta',
-        'borrarReceta' => 'recipescontroller#borrarReceta',
-        'borrarcategoria' => 'recipescontroller#borrarcategoria',
-        'finalizar' => 'recipescontroller#finalizar',
-        'categoria'=>'recipescontroller#view_categorias',
-        'home_pag'=>'recipescontroller#home_pag',
-        'pag_subscription'=>'recipescontroller#pag_subscription',
-        'categorias' => 'recipescontroller#viewrecetas',
-        'login' => 'UsuariosController#login',
-        'registrarse' => 'UsuariosController#registrarse',
-        'registro' => 'UsuariosController#registro',
-        'ingresar' => 'UsuariosController#ingresar',
-        'logout' => 'UsuariosController#logout'
+        ''=> 'recipes/recipescontroller#admin_recipes',
+        'home' => 'recipes/recipescontroller#admin_recipes',
+        'insertarReceta' => 'recipes/recipescontroller#insertar',
+        'insertar_categoria' => 'categorias/categoriacontroller#insertar_categoria',
+        'insert'=> 'recipes/recipescontroller#Agregar_receta',
+        'borrarReceta' => 'recipes/recipescontroller#borrarReceta',
+        'borrarcategoria' => 'categorias/categoriacontroller#borrarcategoria',
+        'finalizar' => 'recipes/recipescontroller#finalizar',
+        'categoria'=>'categorias/categoriacontroller#view_categorias',
+        'home_pag'=>'categorias/categoriacontroller#home_pag',
+        'pag_subscription'=>'recipes/recipescontroller#pag_subscription',
+        'categorias' => 'categorias/categoriacontroller#viewrecetas',
+        'login' => 'usuarios/UsuariosController#login',
+        'registrarse' => 'usuarios/UsuariosController#registrarse',
+        'registro' => 'usuarios/UsuariosController#registro',
+        'ingresar' => 'usuarios/UsuariosController#ingresar',
+        'logout' => 'usuarios/UsuariosController#logout'
 
         
     ];

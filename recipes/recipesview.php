@@ -19,33 +19,15 @@ class  recipesview{
     $this ->  smarty->assign('categorias',$categorias);
     $this ->  smarty->display('templates/Agregar_receta.tpl');
   }
-    
-  function view_categorias( $categorias, $recetas){
-    $this ->  smarty->assign('categoria',$categorias);
+    function misrecetas($categoria ,$recetas){
     $this ->  smarty->assign('recetas',$recetas);
-    $this ->  smarty->display('templates/categoria.tpl');
+    $this ->  smarty->assign('categoria',$categorias);
+    $this ->  smarty->display('templates/index.tpl');
   }
- 
-  function viewrecetas($categorias ,$recetas ,$categoria){
-    $this ->  smarty->assign('titulo', $categoria['nombre']);
+  
+  function pag_subscription ( $recetas , $categorias){
     $this ->  smarty->assign('recetas',$recetas);
     $this ->  smarty->assign('categorias',$categorias);
-    $this ->  smarty->display('templates/recetas.tpl');
-  }
-  
-  function misrecetas($categoria ,$recetas){
-    $this ->  smarty->assign('recetas',$recetas);
-    $this ->  smarty->assign('categoria',$categorias);
-    $this ->  smarty->display('templates/index.tpl');
-  }
-  
-  function  home_pag ($categorias ){
-    $this ->  smarty->assign('categoria',$categorias);
-    $this ->  smarty->display('templates/index.tpl');
-  }
-  
-  function pag_subscription ( $recetas ){
-    $this ->  smarty->assign('recetas',$recetas);
     $this ->  smarty->display('templates/subscription.tpl');
   }
   

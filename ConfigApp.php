@@ -8,21 +8,21 @@ class ConfigApp{
     public static $ACTIONS = [
         ''=> 'recipes/recipescontroller#admin_recipes',
         'home' => 'recipes/recipescontroller#admin_recipes',
-        'insertarReceta' => 'recipes/recipescontroller#insertar',
-        'insertar_categoria' => 'categorias/categoriacontroller#insertar_categoria',
-        'insert'=> 'recipes/recipescontroller#Agregar_receta',
-        'borrarReceta' => 'recipes/recipescontroller#borrarReceta',
-        'borrarcategoria' => 'categorias/categoriacontroller#borrarcategoria',
-        'finalizar' => 'recipes/recipescontroller#finalizar',
-        'categoria'=>'categorias/categoriacontroller#view_categorias',
-        'home_pag'=>'categorias/categoriacontroller#home_pag',
+        'insertRecipe' => 'recipes/recipescontroller#insert',
+        'insert_flavors' => 'flavors/flavorscontroller#insertflavor',
+        'insert'=> 'recipes/recipescontroller#insert_recipe',
+        'deleteRecipe' => 'recipes/recipescontroller#delete_recipe',
+        'removeflavors' => 'flavors/flavorscontroller#deleteflavors',
+        'finish' => 'recipes/recipescontroller#finish',
+        'flavors'=>'flavors/flavorscontroller#view_flavors',
+        'home_pag'=>'flavors/flavorscontroller#home_pag',
         'pag_subscription'=>'recipes/recipescontroller#pag_subscription',
-        'categorias' => 'categorias/categoriacontroller#viewrecetas',
-        'login' => 'usuarios/UsuariosController#login',
-        'registrarse' => 'usuarios/UsuariosController#registrarse',
-        'registro' => 'usuarios/UsuariosController#registro',
-        'ingresar' => 'usuarios/UsuariosController#ingresar',
-        'logout' => 'usuarios/UsuariosController#logout'
+        'flavor' => 'flavors/flavorscontroller#viewrecipes',
+        'login' => 'users/UsersController#login',
+        'check_in' => 'users/UsersController#check_in',
+        'registry' => 'users/UsersController#registry',
+        'enter' => 'users/UsersController#enter',
+        'logout' => 'users/UsersController#logout'
 
         
     ];

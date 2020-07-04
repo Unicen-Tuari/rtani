@@ -24,7 +24,7 @@
         </button>
         <ul class="navbar-nav px-3">
             <li class="nav-item text-nowrap">
-                <a class="nav-link" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                <a  data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
                     aria-controls="collapseExample">
                      <a href ='logout'class="nav-link">Salir del perfil</a>
                        </a>
@@ -43,7 +43,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="categoria">
+                            <a class="nav-link" href="flavors">
                                 <span data-feather="award"></span>
                                 Categorias
                             </a>

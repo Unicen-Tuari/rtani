@@ -1,7 +1,7 @@
 {include file="header.tpl"}
         <div class="col-sm">
           <h1>Crear Receta</h1>
-          <form action ="insertarReceta" method ="get" >
+          <form action ="insertRecipe" method ="get" >
             <div class="form-group">
               <label for="titulo">Titulo</label>
               <input type="text" class="form-control" id="titulo" name="titulo" placeholder="Receta">
@@ -14,8 +14,8 @@
             <div class="form-group">
               <label>Categoria</label>
               <select id="categoria" name="categoria">
-                {foreach from= $categorias item=$categoria}
-                <option value="{{$categoria['id_categoria']}}">{{$categoria['nombre']}}</option>
+                {foreach from= $flavors item=$flavor}
+                <option value="{{$flavor['id_categoria']}}">{{$flavor['nombre']}}</option>
                 {/foreach}
               </select>
             </div>

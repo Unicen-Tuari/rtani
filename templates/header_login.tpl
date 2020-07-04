@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="generator" content="Jekyll v4.0.1">
-    <title>Registrarse</title>
+    <title>Ingreso</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/sign-in/">
     <link rel="icon" href="images/logo.png">
@@ -18,22 +18,5 @@
 <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon.ico">
 <meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
 <meta name="theme-color" content="#563d7c">
-
-    <!-- Custom styles for this template -->
-    <link href="css/signin.css" rel="stylesheet">
+ <link href="css/signin.css" rel="stylesheet">
   </head>
-  <body class="text-center">
-    <form class="form-signin" action="registro" method="post">
-  
-  <h1 class="h3 mb-3 font-weight-normal">Registrarse</h1>
-  <label for="email" class="sr-only">Email </label>
-  <input type="email" id="email" name="email" class="form-control" placeholder="Email " required autofocus>
-  <label for="password" class="sr-only">Password</label>
-  <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
-  <div class="checkbox mb-3">
-    </div>
-  <button class="btn btn-lg btn btn-secondary btn-block" type="submit">Registrarme</button>
-  
-</form>
-</body>
-</html>

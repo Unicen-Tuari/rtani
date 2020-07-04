@@ -1,18 +1,18 @@
 <?php
 require_once "recipesview.php";
 require_once "recipesmodel.php";
-require_once "categorias/categoriamodel.php";
+require_once "flavors/flavorsmodel.php";
 
 class recipescontroller {
 
   private $view;
   private $model;
-  private $categoria_model ;
+  private $flavors_model ;
 
   function __construct (){
     $this ->  view = new recipesview () ;
     $this ->  model = new recipesmodel();
-    $this -> categoria_model = new categoriamodel ();
+    $this -> flavors_model = new flavorsmodel ();
 
     session_start();
   if(!isset($_SESSION["nombre"])){ 
@@ -29,41 +29,38 @@ class recipescontroller {
   }
    
   function admin_recipes($member = null){
-    $recetas=$this -> model -> obtener_receta();
-    $categorias= $this -> categoria_model -> obtener_categoria();
-    $this ->  view -> admin_recipes ( $recetas , $categorias);
+    $recipes=$this -> model -> get_recipes();
+    $flavors= $this -> flavors_model -> get_flavor();
+    $this ->  view -> admin_recipes ( $recipes , $flavors);
   }
-    
-  
-      
-  function misrecetas ($member = null){
-    $recetas=$this -> model -> obtener_receta();
-    $categorias= $this -> categoria_model ->  obtener_categoria();
-     $this ->  view -> misrecetas($recetas ,$categorias);
+    function myrecipes ($member = null){
+    $recipes=$this -> model -> get_recipes();
+    $flavors= $this -> flavors_model ->  get_flavor();
+     $this ->  view -> myrecipes($recipes ,$flavors);
   }
      
-   function borrarReceta ($params){
-    $this->model->  eliminarReceta ($params[0]);
+   function delete_recipe ($params){
+    $this->model->  deleterecipe ($params[0]);
     header ("location: ../home");
   }
-    function finalizar ($params){
-    $this->model-> fin_receta ($params[0]);
+    function finish ($params){
+    $this->model-> finish_recipe ($params[0]);
     header ("location: ../home");
   }
       
-  function Agregar_receta($member = null){
-    $categorias = $this-> categoria_model-> obtener_categoria();
-    $this -> view ->Agregar_receta ($categorias);
+  function insert_recipe($member = null){
+    $flavors = $this-> flavors_model-> get_flavor();
+    $this -> view ->insert_recipe ($flavors);
   }
     
-  function insertar (){
-    $this-> model-> insertReceta($_GET["titulo"],$_GET["ingrediente"] , $_GET["categoria"]);
+  function insert (){
+    $this-> model-> insertrecipes($_GET["titulo"],$_GET["ingrediente"] , $_GET["categoria"]);
     header ("location: home");
  }
     function   pag_subscription ($member = null){
-    $categorias = $this-> categoria_model-> obtener_categoria();
-    $recetas=$this -> model -> obtener_receta();
-    $this ->  view ->   pag_subscription( $recetas ,$categorias );
+    $flavors = $this-> flavors_model-> get_flavor();
+    $recipes=$this -> model -> get_recipes();
+    $this ->  view ->   pag_subscription( $recipes ,$flavors );
   }
 }
  ?>

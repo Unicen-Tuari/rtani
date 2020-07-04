@@ -1,6 +1,6 @@
 <?php
 require_once('libs/Smarty.class.php');
-class UsuariosView
+class UsersView
 {
   private $smarty;
   private $base_url;
@@ -16,9 +16,9 @@ class UsuariosView
     return $this->smarty->display('templates/login.tpl');
   }
 
-  function registrarse(){
+  function check_in(){
     $this->smarty->assign('base_url',$this->base_url);
-    return $this->smarty->display('templates/registrarse.tpl');
+    return $this->smarty->display('templates/check_in.tpl');
   }
    
 }

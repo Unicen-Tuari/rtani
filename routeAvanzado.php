@@ -3,12 +3,12 @@ require_once "ConfigApp.php";
 require_once "recipes/recipesview.php";
 require_once "recipes/recipescontroller.php";
 require_once "recipes/recipesmodel.php";
-require_once "usuarios/usuariosview.php";
-require_once "usuarios/usuarioscontroller.php";
-require_once "usuarios/usuariosmodel.php";
-require_once "categorias/categoriacontroller.php";
-require_once "categorias/categoriamodel.php";
-require_once "categorias/viewcategoria.php";
+require_once "users/usersview.php";
+require_once "users/userscontroller.php";
+require_once "users/usersmodel.php";
+require_once "flavors/flavorscontroller.php";
+require_once "flavors/flavorsmodel.php";
+require_once "flavors/viewflavors.php";
 
 
 function parceURL($url){

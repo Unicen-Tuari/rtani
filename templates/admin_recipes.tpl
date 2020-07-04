@@ -24,17 +24,17 @@
                         </thead>
                         <tbody>
 
-                            {foreach from=$recetas item=$receta}
+                            {foreach from=$recipes item=$recipe}
 
                             <tr>
 
 
-                                <td>{$receta['id_receta']}</td>
-                                <td>{$receta['titulo']}</td>
-                                <td>{$categorias[$receta['fk_id_categoria']-8]['nombre']}</td>
+                                <td>{$recipe['id_receta']}</td>
+                                <td>{$recipe['titulo']}</td>
+                                <td>{$flavors[$recipe['fk_id_categoria']-8]['nombre']}</td>
 
                                 <td> 
-                                    {if $receta['finalizada']}
+                                    {if $recipe['finalizada']}
                                     <div class="badge badge-secondary text-wrap" style="width: 6rem;">
                                         Finalizada
                                     </div>
@@ -42,9 +42,9 @@
                                 </td>
 
                                 <td>
-                                            <a href="finalizar/{$receta['id_receta']}"><span
+                                            <a href="finish/{$recipe['id_receta']}"><span
                                                     data-feather="check"></span>
-                                                <a href="borrarReceta/{$receta['id_receta']} "><span
+                                                <a href="deleteRecipe/{$recipe['id_receta']} "><span
                                                         data-feather="delete"></span>
                                         </span></td>
                             </tr>

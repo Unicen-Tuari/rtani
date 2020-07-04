@@ -16,7 +16,7 @@ class ConfigApp{
         'flavors'=>'flavors/flavorscontroller#view_flavors',
         'home_pag'=>'flavors/flavorscontroller#home_pag',
         'pag_subscription'=>'recipes/recipescontroller#pag_subscription',
-        'flavr' => 'flavors/flavorscontroller#viewrecipes',
+        'flavor' => 'flavors/flavorscontroller#viewrecipes',
         'login' => 'users/UsersController#login',
         'check_in' => 'users/UsersController#check_in',
         'registry' => 'users/UsersController#registry',

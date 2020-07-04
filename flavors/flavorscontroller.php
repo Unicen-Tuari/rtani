@@ -35,7 +35,7 @@ function  view_flavors ($member = null){
     header ("location: ../flavors");
   }
   function insertflavor (){
-    $this-> model-> insert_flavor($_GET["id_categoria"],$_GET["nombre"]);
+    $this-> model-> insert_flavor($_GET["id_flavor"],$_GET["name"]);
     header ("location: flavors");
   }
     

@@ -29,12 +29,12 @@
                             <tr>
 
 
-                                <td>{$recipe['id_receta']}</td>
-                                <td>{$recipe['titulo']}</td>
-                                <td>{$flavors[$recipe['fk_id_categoria']-8]['nombre']}</td>
+                                <td>{$recipe['id_recipe']}</td>
+                                <td>{$recipe['name']}</td>
+                                <td>{$flavors[$recipe['id_flavor']-1]['name']}</td>
 
                                 <td> 
-                                    {if $recipe['finalizada']}
+                                    {if $recipe['finished']}
                                     <div class="badge badge-secondary text-wrap" style="width: 6rem;">
                                         Finalizada
                                     </div>
@@ -42,9 +42,9 @@
                                 </td>
 
                                 <td>
-                                            <a href="finish/{$recipe['id_receta']}"><span
+                                            <a href="finish/{$recipe['id_recipe']}"><span
                                                     data-feather="check"></span>
-                                                <a href="deleteRecipe/{$recipe['id_receta']} "><span
+                                                <a href="deleteRecipe/{$recipe['id_recipe']} "><span
                                                         data-feather="delete"></span>
                                         </span></td>
                             </tr>

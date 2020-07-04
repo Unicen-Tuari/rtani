@@ -4,18 +4,22 @@
           <form action ="insertRecipe" method ="get" >
             <div class="form-group">
               <label for="titulo">Titulo</label>
-              <input type="text" class="form-control" id="titulo" name="titulo" placeholder="Receta">
+              <input type="text" class="form-control" id="name" name="name" placeholder="recipe">
             </div>
             <div class="form-group">
               <label for="ingrediente">Ingredientes</label>
-              <textarea class="form-control" id="ingrediente" name="ingrediente" rows="3"></textarea>
+              <textarea class="form-control" id="ingredient" name="ingredient" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="ingrediente">Pasos a seguir</label>
+              <textarea class="form-control" id="step" name="step" rows="3"></textarea>
             </div>
            
             <div class="form-group">
               <label>Categoria</label>
-              <select id="categoria" name="categoria">
+              <select id="flavor" name="flavor">
                 {foreach from= $flavors item=$flavor}
-                <option value="{{$flavor['id_categoria']}}">{{$flavor['nombre']}}</option>
+                <option value="{{$flavor['id_flavor']}}">{{$flavor['name']}}</option>
                 {/foreach}
               </select>
             </div>

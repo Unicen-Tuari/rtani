@@ -19,7 +19,7 @@ class  viewflavors{
     $this ->  smarty->display('templates/index.tpl');
   }
   function viewrecipes($flavors ,$recipes ,$flavor){
-    $this ->  smarty->assign('title', $flavor['nombre']);
+    $this ->  smarty->assign('title', $flavor['name']);
     $this ->  smarty->assign('recipes',$recipes);
     $this ->  smarty->assign('flavors',$flavors);
     $this ->  smarty->display('templates/recipes.tpl');

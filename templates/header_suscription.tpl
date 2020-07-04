@@ -6,7 +6,7 @@
     <title>Mis recetas</title>
     <link rel ="shortcut icon" type="image/x-icon"href="images/logo.png">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' href="css/style1.css">
+    <link rel='stylesheet' href="css/style.css">
 </head>
 <body>
  <div class="encabezado">
@@ -16,7 +16,7 @@
             <a  href="home_pag">Inicio</a>
             <a href="pag_subscription">Suscribirme</a>
             {foreach from= $flavors item=$flavor}
-            <a  href="flavors/{$flavor['id_categoria']}">{$flavor['nombre']|capitalize}</a>
+            <a  href="flavors/{$flavor['id_flavor']}">{$flavor['name']|capitalize}</a>
             {/foreach}     
          </nav>
     </div>

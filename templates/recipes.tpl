@@ -3,21 +3,21 @@
    
    {foreach from=$recipes item=recipe}
    <div class="receta">
-        <h3 class="recetanombre">{$recipe['titulo']}</h3>
+        <h3 class="recetanombre">{$recipe['name']}</h3>
         <img class="imagen" src="images/imagen-no-encontrada.jpg" alt="foto no encontrada">
     
         <div class="ingrediente">	
             <h4>Ingredientes:</h4> 
             <ul>
-                <li>{$recipe['ingrediente']}</li>
+                <li>{$recipe['ingredient']}</li>
             </ul>
         </div>
 
         <h4 class="pasos">Pasos a seguir:</h4>
-        <ol>
+        <ul>
            
-          
-        </ol>
+            <li>{$recipe['step']}</li>
+        </ul>
        
        
     </div>

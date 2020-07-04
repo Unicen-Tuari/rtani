@@ -85,11 +85,11 @@
     
                                 <tr>
     
-                                    <td>{$flavor['id_categoria']}</td>
-                                    <td>{$flavor['nombre']}</td>
+                                    <td>{$flavor['id_flavor']}</td>
+                                    <td>{$flavor['name']}</td>
                                    
                                     <td>  
-                                        <a href="removeflavors/{$flavor['id_categoria']} "><span
+                                        <a href="removeflavors/{$flavor['id_flavor']} "><span
                                                             data-feather="delete"></span>
                                             </span></td>
                                 </tr>
@@ -102,7 +102,7 @@
                     <form action ="insert_flavors" method ="get" >
                         <div class="form-group">
                           <label for="titulo">Nombre Categoria</label>
-                          <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Categoria">
+                          <input type="text" class="form-control" id="name" name="name" placeholder="flavor">
                         </div>
                         
                         <div class="form-group">

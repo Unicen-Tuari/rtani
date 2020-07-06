@@ -17,7 +17,13 @@ class  recipesview{
 
   function insert_recipe($flavors){
     $this ->  smarty->assign('flavors',$flavors);
-    $this ->  smarty->display('templates/Agregar_receta.tpl');
+    $this ->  smarty->display('templates/insert_recipe.tpl');
+  }
+  function edit($flavors ,  $recipes){
+    $this ->  smarty->assign('recipes',$recipes);
+  
+    $this ->  smarty->assign('flavors',$flavors);
+    $this ->  smarty->display('templates/edit_recipe.tpl');
   }
     function myrecipes($flavors ,$recipes){
     $this ->  smarty->assign('recipes',$recipes);

@@ -13,6 +13,7 @@
     <link rel="icon" href="images/logo.png">
     <!-- Custom styles for this template -->
     <link href="css/css.boostrap.css" rel="stylesheet">
+    <base href="{BASE_URL}">
 </head>
 
 <body>
@@ -38,17 +39,17 @@
                     <ul class="nav flex-column">
                         <li class="nav-item">
                             <a class="nav-link active" href="home">
-                                <span data-feather="book"></span>
+                                <span data-feather="book-open"></span>
                                 Recetas
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="flavors">
-                                <span data-feather="award"></span>
-                                Categorias
+                            <a class="nav-link" href="flavors/">
+                                <span data-feather="file-text"></span>
+                                Sabores
                             </a>
                         </li>
-  <li class="nav-item">
+                      <li class="nav-item">
                             <a class="nav-link" href="home_pag">
                                 <span data-feather="home"></span>
                                 Home Mis  Recetas

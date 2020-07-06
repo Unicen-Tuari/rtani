@@ -16,7 +16,7 @@
             </div>
            
             <div class="form-group">
-              <label>Categoria</label>
+              <label>Sabor</label>
               <select id="flavor" name="flavor">
                 {foreach from= $flavors item=$flavor}
                 <option value="{{$flavor['id_flavor']}}">{{$flavor['name']}}</option>

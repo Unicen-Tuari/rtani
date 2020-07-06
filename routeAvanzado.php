@@ -38,9 +38,6 @@ if(array_key_exists($actionName, ConfigApp::$ACTIONS)){
     }else{
         echo $controller->$methodName();
     }
-}else{
-    header ("location: home");
-
 }
 
 ?>

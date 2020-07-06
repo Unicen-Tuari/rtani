@@ -42,10 +42,12 @@ class UsersController
       session_start();
       $_SESSION["nombre"] = $user["mail"];
       header("Location: home");
+    }else{
+      echo '<script language="javascript">alert("contraseña y/o usuario incorrecto");</script>';
+      header("Location: login");
     }
-    else
-    header("Location: login");
-}
+  }
+    
 
   
   function logout(){

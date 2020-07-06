@@ -32,6 +32,8 @@ class recipescontroller {
     $recipes=$this -> model -> get_recipes();
     $flavors= $this -> flavors_model -> get_flavor();
     $this ->  view -> admin_recipes ( $recipes , $flavors);
+  
+    
   }
     function myrecipes ($member = null){
     $recipes=$this -> model -> get_recipes();
@@ -52,11 +54,28 @@ class recipescontroller {
     $flavors = $this-> flavors_model-> get_flavor();
     $this -> view ->insert_recipe ($flavors);
   }
-    
+
+   
   function insert (){
     $this-> model-> insertrecipes($_GET["name"],$_GET["ingredient"] , $_GET["flavor"],$_GET["step"]);
     header ("location: home");
  }
+ function edit ($params){
+   $id_recipe = $params[0];
+   $recipes = $this -> model -> id_recipe ($id_recipe);
+   $flavors = $this-> flavors_model-> get_flavor();
+   $this -> view ->edit ($flavors ,$recipes);
+  
+ }
+  
+ 
+ function edit_recipe (){
+   $id_recipe =$_GET["id_recipe"];
+  $this-> model-> editrecipe(  $_GET["ingredient"],   $_GET["flavor"], $_GET["step"], $id_recipe);
+  header ("location: home");
+ 
+
+  }
     function   pag_subscription ($member = null){
     $flavors = $this-> flavors_model-> get_flavor();
     $recipes=$this -> model -> get_recipes();

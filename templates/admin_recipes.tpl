@@ -17,7 +17,7 @@
                             <tr>
                                 <th>id_receta</th>
                                 <th>Receta</th>
-                                <th>categoria</th>
+                                <th>Sabores</th>
                                 <th>finalizada</th>
                                 <th>Acciones</th>
                             </tr>
@@ -31,7 +31,7 @@
 
                                 <td>{$recipe['id_recipe']}</td>
                                 <td>{$recipe['name']}</td>
-                                <td>{$flavors[$recipe['id_flavor']-1]['name']}</td>
+                                <td>{$recipe['name_flavor']}</td>
 
                                 <td> 
                                     {if $recipe['finished']}
@@ -43,9 +43,11 @@
 
                                 <td>
                                             <a href="finish/{$recipe['id_recipe']}"><span
-                                                    data-feather="check"></span>
+                                                    data-feather="check-square"></span>
+                                                    <a href="edit/{$recipe['id_recipe']}"><span
+                                                        data-feather="edit"></span>
                                                 <a href="deleteRecipe/{$recipe['id_recipe']} "><span
-                                                        data-feather="delete"></span>
+                                                        data-feather="trash-2"></span>
                                         </span></td>
                             </tr>
                         </tbody>

@@ -1,4 +1,4 @@
-{include file="header_suscription.tpl"}
+{include file="header_home.tpl"}
       <div class="Suscripcion">
           <h2 class="titulosub"> Completa tus datos para suscribirte</h2>  
              <p class="titulosub"> Con esta suscripcion recibiras diariamente recetas de tu interes</p> 

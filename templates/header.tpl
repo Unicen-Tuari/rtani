@@ -27,7 +27,7 @@
             <li class="nav-item text-nowrap">
                 <a  data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
                     aria-controls="collapseExample">
-                     <a href ='logout'class="nav-link">Salir del perfil</a>
+                     <a href ='logout'class="nav-link">Salir la pagina</a>
                        </a>
             </li>
  </ul>

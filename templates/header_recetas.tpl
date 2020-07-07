@@ -12,7 +12,7 @@
 <body>
  <div class="encabezado">
         <img class="logo "src="images/logo.png" alt="foto del logo">
-        <h1> Mis Recetas</h1>
+        <h1><a  href="home">Mis Recetas</a></h1>
         <nav>
             <a  href="home_pag">Inicio</a>
             <a href="pag_subscription">Suscribirme</a>

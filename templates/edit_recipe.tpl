@@ -4,6 +4,10 @@
           <h1>Editar Receta</h1>
           <form action ="edit_recipe" method ="get" >
             <input type="hidden"  id="id_recipe" name="id_recipe"  value ="{{$recipes['id_recipe']}}">
+            <div class="form-group">
+              <label for="titulo">Titulo</label>
+              <textarea class="form-control" id="name" name="name" value ="{{$recipes['name']}}" rows="3">{{$recipes['name']}}</textarea>
+            </div>
         <div class="form-group">
               <label for="ingrediente"> Editar Ingredientes</label>
               <textarea class="form-control" id="ingredient" name="ingredient" value ="{{$recipes['ingredient']}}" rows="3">{{$recipes['ingredient']}}</textarea>

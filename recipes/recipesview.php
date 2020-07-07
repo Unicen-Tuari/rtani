@@ -21,7 +21,6 @@ class  recipesview{
   }
   function edit($flavors ,  $recipes){
     $this ->  smarty->assign('recipes',$recipes);
-  
     $this ->  smarty->assign('flavors',$flavors);
     $this ->  smarty->display('templates/edit_recipe.tpl');
   }

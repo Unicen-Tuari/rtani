@@ -6,7 +6,7 @@
     <title>Mis recetas</title>
     <link rel ="shortcut icon" type="image/x-icon"href="images/logo.png">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' href="../css/style.css">
+    <link rel='stylesheet' href="../css/style_home.css">
     <base href="{BASE_URL}">
 </head>
 <body>

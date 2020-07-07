@@ -29,14 +29,14 @@ h1{
 nav{
     float: left;
     margin-left: 50%;
-    padding: 3%  0%;
+    padding: 4%  0%;
     text-align: right;
 }  
 
 a{
     font-family:cursive,Arial, Helvetica, sans-serif;
     color:cornsilk;
-    font-size: 130%;
+    font-size: 115%;
     margin-left: 2px;
   
     text-decoration: none;
